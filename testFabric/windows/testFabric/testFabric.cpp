@@ -100,6 +100,7 @@ _Use_decl_annotations_ int CALLBACK WinMain(HINSTANCE instance, HINSTANCE, PSTR 
   window.Resize({1000, 1000});
   window.Show();
   auto hwnd = winrt::Microsoft::UI::GetWindowFromWindowId(window.Id());
+
   auto scaleFactor = ScaleFactor(hwnd);
 
   auto host = CreateReactNativeHost(hwnd, compositor);
